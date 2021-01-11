@@ -14,14 +14,9 @@ class Worker:
 def work(list:Worker,num:int):
     count=0;
     for i in list:
-        if i.current_shift==num and i.flag==0:
+        if i.first_shift==num and i.flag==0:
             return count
         count=count+1
-    count=0
-    for i in list:   # just one in cycle- return itself
-        if(i.flag==0):
-            return count
-        count = count + 1
 
 def exchange_shifts (workers: List[Worker]):
     """
