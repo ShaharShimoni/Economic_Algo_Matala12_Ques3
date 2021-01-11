@@ -132,7 +132,6 @@ def exchange_shifts (workers: List[Worker]):
                              j.preferences.remove(workers[index1].current_shift);
 
 
-        ################look at this example
     for j in workers:
         if(j.first_shift!=j.current_shift):
            print(j.name,"moves from shift",j.first_shift,"to shift",j.current_shift)
